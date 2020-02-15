@@ -11,7 +11,7 @@ endfunction
 
 " Stop blinking if job exist
 function! faclig#stopBlinking()
-  if exists(b:blinkingJob)
+  if exists('b:blinkingJob')
     call job_stop(b:blinkingJob, 30)
   endif
 endfunction
@@ -21,7 +21,7 @@ endfunction
 "
 " If auto-blinking is running, stop it
 function faclig#sendKey(place, key)
-  if exists(b:blinkingJob)
+  if exists('b:blinkingJob')
     StopBlinking
   endif
 
