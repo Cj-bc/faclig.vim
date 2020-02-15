@@ -1,6 +1,6 @@
 let g:faclig#face_pane = 'left-of'
 let g:faclig#autoBlink#interval = 5 " second
-let g:faclig#shscript = expand('<sfile>:p:h') . '../tool/auto-blink.sh'
+let g:faclig#shscript = expand('<sfile>:p:h') . '/../tool/auto-blink.sh'
 
 
 
