@@ -20,7 +20,7 @@ endfunction
 " Send key to the pane
 "
 " If auto-blinking is running, stop it
-function faclig#sendKey(place, key)
+function! faclig#sendKey(place, key)
   if exists('b:blinkingJob')
     StopBlinking
   endif
