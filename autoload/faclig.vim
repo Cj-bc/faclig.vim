@@ -74,7 +74,6 @@ function! faclig#disableFace()
   nunmap <F3>
   nunmap <F4>
   nunmap <F5>
-  nunmap <Space>
   nmap <silent> <leader>1 :call faclig#enableFace()<CR>
 endfunction
 
