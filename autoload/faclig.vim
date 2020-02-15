@@ -6,7 +6,7 @@ let g:faclig#shscript = expand('<sfile>:p:h') . '../tool/auto-blink.sh'
 
 " Start blinking
 function! faclig#startBlinking()
-  let b:blinkingJob = job_start(g:faclig#shscript . ' ' . g:faclig#autoBlink#interval)
+  let b:blinkingJob = job_start('bash ' . g:faclig#shscript . ' ' . g:faclig#autoBlink#interval)
 endfunction
 
 " Stop blinking if job exist
