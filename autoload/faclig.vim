@@ -22,7 +22,7 @@ endfunction
 " If auto-blinking is running, stop it
 function! faclig#sendKey(place, key)
   if exists('b:blinkingJob')
-    StopBlinking
+    call faclig#stopBlinking()
   endif
 
   call system('tmux send -t {' . a:place . '} ' . a:key)
