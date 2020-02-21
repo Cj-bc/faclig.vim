@@ -27,3 +27,5 @@ function pauseBlinkingFor() {
   startBlinking $interval
 }
 
+
+startBlinking $FACLIG_AUTOBLINK_INTERVAL
