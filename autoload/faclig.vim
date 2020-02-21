@@ -49,6 +49,8 @@ function! faclig#enableFace()
   nmap <silent> <F3> :call faclig#sendKey(g:faclig#face_pane, 'xcb')<CR> " Emotion: Surprised
   nmap <silent> <F4> :call faclig#sendKey(g:faclig#face_pane, 'rfn')<CR> " Emotion: Smile
   nmap <silent> <F5> :call faclig#sendKey(g:faclig#face_pane, 'wdn')<CR> " Emotion: Blink
+  nmap <silent> <F6> :call faclig#startBlinking()<CR>
+  nmap <silent> <F7> :call faclig#stopBlinking()<CR>
 
   nmap <silent> <leader>1 :call faclig#disableFace()<CR>
 endfunction
@@ -74,7 +76,7 @@ function! faclig#disableFace()
   nunmap <F3>
   nunmap <F4>
   nunmap <F5>
+  nunmap <F6>
+  nunmap <F7>
   nmap <silent> <leader>1 :call faclig#enableFace()<CR>
 endfunction
-
-
