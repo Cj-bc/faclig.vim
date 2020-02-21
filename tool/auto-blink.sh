@@ -4,9 +4,9 @@ function continueWink() {
   export FACLIG_AUTOBLINK_INTERVAL=$1
   local -i interval=$1
 
-  tmux send -t {left-of} 'we'
-  sleep 0.3
   tmux send -t {left-of} 'sd'
+  sleep 0.3
+  tmux send -t {left-of} 'we'
   sleep $interval
 
   continueWink $interval
