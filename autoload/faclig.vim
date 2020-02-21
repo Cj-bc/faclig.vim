@@ -12,7 +12,7 @@ endfunction
 " Stop blinking if job exist
 function! faclig#stopBlinking()
   if exists('b:blinkingJob')
-    call job_stop(b:blinkingJob, 30)
+    call job_stop(b:blinkingJob, "kill")
   endif
 endfunction
 
