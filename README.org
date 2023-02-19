@@ -1,0 +1,4 @@
+*DEPRECATED* [[https://github.com/Cj-bc/faclig][faclig]] was rewritten in haskell, and this is no longer compatible with new implementation.
+As I don't use vim now I won't rewrite this plugin as well.
+
+
